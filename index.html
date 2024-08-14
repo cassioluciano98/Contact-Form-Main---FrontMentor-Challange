@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--Links de Estilo-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Link JS-->
+  <script defer src="app.js"></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+
+  <main id="main">
+    <h1>Contact Us</h1>
+
+    <form action="#" name="#" class="form">
+
+        <div class="name-wrapper">
+          
+          <div class="first-name">
+            <label for="fName" class="title">First Name &ast;</label>
+            <input type="text" class=" fname" id="fName">
+            <span class="required">This field is required</span>
+          </div><!--Final da First-Name-->
+
+          <div class="last-name">
+            <label for="lName" class="title">Last Name &ast;</label>
+            <input type="text" class=" lname" id="lName">
+            <span class="required">This field is required</span>
+          </div><!--Final da Last-Name-->
+
+        </div><!--Final da Class Name-Wrapper-->
+        
+        <div class="email-section">
+        <label for="email" class="title">Email Address &ast;</label>
+        <input type="text" autocomplete="email" name="email" id="email">
+        
+        <span class="required">This field is required</span>
+        <span id="email-regex" class="required">Please enter a valid email address</span>
+        
+        </div><!--Final da Class Email Section-->
+
+        <p class="title">Query Type &ast;</p>
+
+        <div class="query-check">
+
+          <div class="query">
+            <input type="radio" name="query" id="query-general">
+            <label for="query-general">General Enquiry</label>
+          </div>
+
+          <div class="query">
+            <input type="radio" name="query" id="query-support" >
+            <label for="query-support">Support Request</label>
+          </div>
+
+          <span class="required">Please select a query type</span>
+
+        </div><!--Final da Class Query Check-->
+
+        <div class="mensagem-section">
+          <label for="mensagem" class="title">Message &ast;</label>
+          <textarea id="mensagem"></textarea>
+        </div>
+        <span class="required">This field is required</span>
+
+        <div class="consent">
+          <input type="checkbox" id="consent-check">
+          <label for="consent-check">I consent to being contacted by the team &ast;</label>
+          
+        </div>
+        
+        <span class="required">To submit this form, please consent to being contacted</span>
+
+        <button type="submit">Submit</button>
+
+        <div id="sucess-message">
+          
+          <img src="assets/images/icon-success-check.svg" alt="">
+          <h3>
+            Message Sent!
+          </h3>
+          <span>Thanks for completing the form. We'll be in touch soon!</span>
+        </div>
+
+      </form><!--Final do Form-->
+
+  </main><!--Final da Classe Main-->
+  
+
+  <div class="attribution">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by 
+    <a href="https://github.com/cassioluciano98">Cassio Luciano Guimaraes</a>.
+  </div>
+
+</body>
+</html>
